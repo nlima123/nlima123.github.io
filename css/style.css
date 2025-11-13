@@ -8,6 +8,7 @@ height: 100vh; /* full viewpoint height */
     position: absolute; /* child so absolute */
     width: 100%; /* full width */
     height: 100%; /* full height */
+    transition: transform 0.6s ease;
 }
 
 .title-element {
@@ -19,7 +20,7 @@ height: 100vh; /* full viewpoint height */
 .home-content {
     background-color: #ffa4a4;
     z-index: 1; /* Home content behind title initially */
-    transition: transform 0.6s ease;
+    top:100%;
     transform: translateY(100%); /* Start off-screen below */
 }
 
