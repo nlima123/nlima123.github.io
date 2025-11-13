@@ -30,5 +30,5 @@ height: 100vh; /* full viewpoint height */
 }
 
 .container:hover .home-content {
-  transform: translateY(0); /* Bring home content into view */
+  transform: translateY(-100%); /* Bring home content into view */
 }
