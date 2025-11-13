@@ -1,0 +1,32 @@
+.container {
+position: relative; /* occupies the full space but does not move anything */ 
+width: 100%; /* full width */
+height: 100vh; /* full viewpoint height */
+}
+
+.title-element, .home-content {
+    position: absolute; /* child so absolute */
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+}
+
+.title-element {
+    background-color: #ffd8d8;
+    z-index: 2; /* Ensure title is on top initially */
+    transform: translateY(0); /* Initial position */
+}
+
+.home-content {
+    background-color: #ffa4a4;
+    z-index: 1; /* Home content behind title initially */
+    transform: translateY(100%); /* Start off-screen below */
+}
+
+/* When hovering over the container, move the title up and bring home content in */
+.container:hover .title-element {
+  transform: translateY(-100%); /* Move title up and off-screen */
+}
+
+.container:hover .home-content {
+  transform: translateY(0); /* Bring home content into view */
+}
