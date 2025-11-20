@@ -1,3 +1,10 @@
+*{ /* applied to all html files */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .container {
 position: relative; /* occupies the full space but does not move anything */ 
 width: 100%; /* full width */
