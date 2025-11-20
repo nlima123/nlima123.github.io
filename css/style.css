@@ -38,6 +38,6 @@ overflow: hidden; /* prevent stack overlapping */
   transform: translateY(-100%); /* Move title up and off-screen */
 }
 
-.container:hover .home-content {
-  transform: translateY(0); /* Bring home content into view */
-}
+/* .container:hover .home-content {
+  transform: translateY(0); /* Bring home content into view 
+} */
