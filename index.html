@@ -32,22 +32,26 @@
 
             let hasSwiped = false;
             let startY = 0;
+            let isDragging = false;
 
-            container.addEventListener("touchstart", function(e) {
+            container.addEventListener("pointerdown", (e) => {
                 if (hasSwiped) return;
-                startY = e.touches[0].clientY;
+                startY = e.clientY;
+                isDragging = true;
             });
 
-            container.addEventListener("touchend", function(e) {
-                if (hasSwiped) return;
+            container.addEventListener("pointerup", (e) => {
+                if (hasSwiped || !isDragging) return;
 
-                let endY = e.changedTouches[0].clientY;
+                let endY = e.clientY;
                 let diff = startY - endY;
 
-                if (diff > 50) { // swipe up distance
+                if (diff > 60) { // swipe/drag up distance threshold
                 container.classList.add("swiped");
-                hasSwiped = true; // prevents it from running again
+                hasSwiped = true; // 🔥 only once
                 }
+
+                isDragging = false;
             });
         </script>
 
