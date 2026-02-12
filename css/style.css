@@ -10,6 +10,9 @@ position: relative; /* occupies the full space but does not move anything */
 width: 100%; /* full width */
 height: 100vh; /* full viewpoint height */
 overflow: hidden; /* prevent stack overlapping */
+
+touch-action: none;
+cursor: grab;
 }
 
 .title-element, .home-content {
