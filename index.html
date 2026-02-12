@@ -25,5 +25,31 @@
                 <p>Full-Stack Development</p>
            </div>
         </div>
+
+        // JavaScript to swipe once
+        <script>
+            const container = document.querySelector(".container");
+
+            let hasSwiped = false;
+            let startY = 0;
+
+            container.addEventListener("touchstart", function(e) {
+                if (hasSwiped) return;
+                startY = e.touches[0].clientY;
+            });
+
+            container.addEventListener("touchend", function(e) {
+                if (hasSwiped) return;
+
+                let endY = e.changedTouches[0].clientY;
+                let diff = startY - endY;
+
+                if (diff > 50) { // swipe up distance
+                container.classList.add("swiped");
+                hasSwiped = true; // prevents it from running again
+                }
+            });
+        </script>
+
     </body>
 </html>
