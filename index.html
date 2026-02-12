@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Page Title -->
-        <title>Nicoly Lima</title>
+        <title>Welcome</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -13,20 +13,6 @@
                 <h1>Weolcome</h1>
                 <p>Swipe up for more!</p>
             </div>
-            <div class="home-content">
-                <nav>
-                    <ul>
-                        <!-- <li><a href="#">Languages</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Games</a></li> -->
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                    </ul>
-                </nav>
-                <h2>Software Engineering</h2>
-                <p>Full-Stack Development</p>
-           </div>
         </div>
 
         // JavaScript to swipe once
@@ -47,6 +33,7 @@
                 if (diff > 60 && !hasSwiped) {
                     container.classList.add("swiped");
                     hasSwiped = true;
+                    window.location.href = "home.html";
                 }
 
                 window.removeEventListener("pointerup", handlePointerUp);
