@@ -34,11 +34,11 @@ overflow: hidden; /* prevent stack overlapping */
 }
 
 /* When hovering over the container, move the title up and bring home content in */
-.container:hover .title-element {
+.container:swipe .title-element {
   transform: translateY(-100%); /* Move title up and off-screen */
 }
 
-.container:hover .home-content {
+.container:swipe .home-content {
   transform: translateY(0); /* Bring home content into view */
 } 
 
