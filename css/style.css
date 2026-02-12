@@ -37,11 +37,11 @@ cursor: grab;
 }
 
 /* When hovering over the container, move the title up and bring home content in */
-.container:swipe .title-element {
+.container.swiped .title-element {
   transform: translateY(-100%); /* Move title up and off-screen */
 }
 
-.container:swipe .home-content {
+.container.swiped .home-content {
   transform: translateY(0); /* Bring home content into view */
 } 
 
