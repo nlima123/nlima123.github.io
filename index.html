@@ -35,26 +35,24 @@
 
             let hasSwiped = false;
             let startY = 0;
-            let isDragging = false;
 
             container.addEventListener("pointerdown", (e) => {
                 if (hasSwiped) return;
+
                 startY = e.clientY;
-                isDragging = true;
-            });
 
-            container.addEventListener("pointerup", (e) => {
-                if (hasSwiped || !isDragging) return;
+                const handlePointerUp = (event) => {
+                let diff = startY - event.clientY;
 
-                let endY = e.clientY;
-                let diff = startY - endY;
-
-                if (diff > 60) { // swipe/drag up distance threshold
-                container.classList.add("swiped");
-                hasSwiped = true; // 🔥 only once
+                if (diff > 60 && !hasSwiped) {
+                    container.classList.add("swiped");
+                    hasSwiped = true;
                 }
 
-                isDragging = false;
+                window.removeEventListener("pointerup", handlePointerUp);
+                };
+
+                window.addEventListener("pointerup", handlePointerUp);
             });
         </script>
 
