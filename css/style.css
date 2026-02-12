@@ -30,7 +30,7 @@ cursor: grab;
     transform: translateY(0); /* Initial position */
 }
 
-.home-content {
+.landing .home-content {
     background-color: #ffa4a4;
     z-index: 1; /* Home content behind title initially */
     transform: translateY(100%); /* Start off-screen below */
