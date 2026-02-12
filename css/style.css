@@ -63,3 +63,8 @@ cursor: grab;
   color: #000000; 
   font-weight: 400;
 }
+
+body:not(.landing) .home-content {
+  position: relative;
+  transform: translateY(0);
+}
