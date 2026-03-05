@@ -25,6 +25,8 @@ cursor: grab;
 }
 
 .title-element {
+    text-align: center;
+    font-size: 2rem;
     background-color: #ffd8d8;
     z-index: 2; /* Ensure title is on top initially */
     transform: translateY(0); /* Initial position */
@@ -40,7 +42,7 @@ cursor: grab;
 .title-element h1 {
     text-align: center;
     font-size: 4rem; /* large heading */
-    font-family: 'Lucida Calligraphy', 'Cursive', sans-serif; /* NEW: calligraphy font */
+    font-family: 'Poppins', sans-serif;  /* NEW: calligraphy font */
     margin-bottom: 20px; /* optional spacing below h1 */
 }
 
