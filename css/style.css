@@ -36,6 +36,15 @@ cursor: grab;
     transform: translateY(100%); /* Start off-screen below */
 }
 
+/* Make Welcome large and calligraphy-style */
+.title-element h1 {
+    text-align: center;
+    font-size: 4rem; /* large heading */
+    font-family: 'Lucida Calligraphy', 'Cursive', sans-serif; /* NEW: calligraphy font */
+    margin-bottom: 20px; /* optional spacing below h1 */
+}
+
+
 /* When hovering over the container, move the title up and bring home content in */
 .container.swiped .title-element {
   transform: translateY(-100%); /* Move title up and off-screen */
