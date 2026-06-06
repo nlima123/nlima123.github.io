@@ -4,44 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Page Title -->
-        <title>Welcome</title>
+        <title>Home</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
-            <div class="title-element">
-                <h1>Welcome</h1>
-                <p>Swipe up for more!</p>
+            <div class="home-content">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+                <h2>Hi, I'm Nicoly</h2>
+                <p>Coder</p>
             </div>
         </div>
-
-        // JavaScript to swipe once
-        <script>
-            const container = document.querySelector(".container");
-
-            let hasSwiped = false;
-            let startY = 0;
-
-            container.addEventListener("pointerdown", (e) => {
-                if (hasSwiped) return;
-
-                startY = e.clientY;
-
-                const handlePointerUp = (event) => {
-                let diff = startY - event.clientY;
-
-                if (diff > 60 && !hasSwiped) {
-                    container.classList.add("swiped");
-                    hasSwiped = true;
-                    window.location.href = "home.html";
-                }
-
-                window.removeEventListener("pointerup", handlePointerUp);
-                };
-
-                window.addEventListener("pointerup", handlePointerUp);
-            });
-        </script>
 
     </body>
 </html>
