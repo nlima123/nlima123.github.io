@@ -56,21 +56,26 @@ cursor: grab;
   transform: translateY(0); /* Bring home content into view */
 } 
 
+/* Styles for the header and navigation */
 header.site-header {
   width: 100%;
   padding: 16px 24px;
+  /* Light pink background for the header */
   background-color: #fff5f5;
+  /* Make the header sticky at the top */
   position: sticky;
   top: 0;
   z-index: 10;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   justify-content: center;
 }
 
+/* Navigation list styles */
 nav ul {
   display: flex;
   gap: 24px;
@@ -78,6 +83,7 @@ nav ul {
   margin: 0;
 }
 
+/* Navigation list item styles */
 nav li {
   list-style: none;
 }
