@@ -1,16 +1,16 @@
-<!DOCTYPE html> <!-- declare document type -->
-<html lang="en"> <!-- HTML tag -->
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Page Title -->
-        <title>Projects</title>
+        <title>Projects | Nicoly</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="site-header">
-            <nav>
-                <ul>
+            <nav class="nav-bar">
+                <a class="nav-brand" href="index.html">Nicoly</a>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -20,16 +20,36 @@
         <main class="container projects-container">
             <section class="page-intro">
                 <h1>Projects</h1>
-                <p>Highlighted work and a quick link to my GitHub.</p>
+                <p>Browse my featured GitHub repository and see the work I’m proud to share.</p>
             </section>
-            <section class="portfolio-grid">
+            <section class="section project-section">
                 <a class="repo-card" href="https://github.com/nlima123" target="_blank" rel="noopener noreferrer">
                     <span class="repo-badge">Featured</span>
                     <h2>GitHub Repository</h2>
-                    <p>Check out my code, contributions, and projects that demonstrate my software engineering skills.</p>
-                    <span class="repo-link">View on GitHub →</span>
+                    <p>Explore code samples, polished project layouts, and engineering work designed for hiring teams.</p>
+                    <span class="repo-link">Open GitHub &rarr;</span>
                 </a>
             </section>
+            <section class="section project-highlights">
+                <h2 class="section-title">Project highlights</h2>
+                <div class="card-grid">
+                    <article class="info-card">
+                        <h3>Responsive UI</h3>
+                        <p>Modern layouts with readable typography and clear mobile-first design.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>GitHub-ready</h3>
+                        <p>Well-organized repositories with meaningful descriptions and links.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Real-world focus</h3>
+                        <p>Work that demonstrates engineering skills for software teams and real products.</p>
+                    </article>
+                </div>
+            </section>
         </main>
+        <footer class="site-footer">
+            <p>© 2026 Nicoly · <a href="index.html">Home</a></p>
+        </footer>
     </body>
 </html>

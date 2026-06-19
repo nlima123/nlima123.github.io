@@ -1,16 +1,16 @@
-<!DOCTYPE html> <!-- declare document type -->
-<html lang="en"> <!-- HTML tag -->
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Page Title -->
-        <title>Home</title>
+        <title>Nicoly | Software Engineer</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="site-header">
-            <nav>
-                <ul>
+            <nav class="nav-bar">
+                <a class="nav-brand" href="index.html">Nicoly</a>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -20,12 +20,43 @@
         <main class="container home-container">
             <section class="hero-section">
                 <div class="hero-copy">
-                    <p class="eyebrow">Software Engineer Portfolio</p>
-                    <h1>Hi, I’m Nicoly</h1>
-                    <p>I build clean web experiences and engineer projects that help teams move faster.</p>
-                    <a class="cta-button" href="projects.html">See Featured Project</a>
+                    <p class="eyebrow">Software Engineer</p>
+                    <h1>Building polished software solutions.</h1>
+                    <p>I design and develop efficient, scalable applications with a focus on user experience and code quality.</p>
+                    <div class="hero-actions">
+                        <a class="cta-button" href="projects.html">Explore Projects</a>
+                        <a class="secondary-button" href="about.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-preview">
+                    <div class="feature-card">
+                        <span class="card-tag">Featured</span>
+                        <h2>GitHub Repository</h2>
+                        <p>Visit my repository to view code samples, contributions, and active projects.</p>
+                        <a class="card-link" href="https://github.com/nlima123" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section cards-section">
+                <h2 class="section-title">What I build</h2>
+                <div class="card-grid">
+                    <article class="info-card">
+                        <h3>Frontend interfaces</h3>
+                        <p>Responsive layouts, accessible components, and clean interactions for modern web applications.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Project structure</h3>
+                        <p>Readable code, reusable components, and GitHub-ready repositories with strong developer conventions.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Collaboration</h3>
+                        <p>Version control, documentation, and communication that make working with teams simple and polished.</p>
+                    </article>
                 </div>
             </section>
         </main>
+        <footer class="site-footer">
+            <p>© 2026 Nicoly · <a href="projects.html">GitHub</a></p>
+        </footer>
     </body>
 </html>
