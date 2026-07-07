@@ -241,6 +241,19 @@ svg {
   backdrop-filter: blur(12px);
 }
 
+.project-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1 / 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+.repo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .info-card h3,
 .repo-card h2 {
   margin-bottom: 14px;
@@ -324,7 +337,8 @@ svg {
   .hero-section,
   .profile-grid,
   .card-grid,
-  .values-section .value-cards {
+  .values-section .value-cards,
+  .repo-grid {
     grid-template-columns: 1fr;
   }
 
