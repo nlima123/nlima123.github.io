@@ -826,9 +826,6 @@ body {
 }
 
 @media (max-width: 760px) {
-  .repo-grid {
-    grid-template-columns: 1fr;
-  }
   .hero-copy h1 {
     font-size: 2.7rem;
   }
