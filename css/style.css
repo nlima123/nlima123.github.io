@@ -348,6 +348,10 @@ svg {
     min-height: auto;
     padding-top: 36px;
   }
+
+  .repo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 620px) {
@@ -490,24 +494,33 @@ body {
 
 .project-square {
   position: relative;
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
   min-height: 0;
   aspect-ratio: 1 / 1;
-  padding: 0;
+  padding: 32px;
+  border: 1px solid rgba(171, 130, 224, 0.48);
+  border-radius: 8px;
+  background: linear-gradient(145deg, #31243b, #211a29);
+  box-shadow: 0 0 28px rgba(119, 86, 168, 0.2), inset 0 1px rgba(255, 255, 255, 0.04);
+  color: #f4eef8;
+  text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-square:hover,
 .project-square:focus-visible {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: #c99cff;
+  box-shadow: 0 0 34px rgba(153, 94, 217, 0.34), inset 0 1px rgba(255, 255, 255, 0.06);
 }
 
 .project-square:focus-visible {
-  outline: 3px solid var(--accent-deep);
+  outline: 3px solid #c99cff;
   outline-offset: 4px;
 }
 
@@ -758,34 +771,39 @@ body {
 .project-copy {
   display: grid;
   align-content: start;
-  gap: 7px;
-  padding: 18px 22px 20px;
-}
-
-.project-copy .card-tag {
-  width: fit-content;
-  margin: 0;
-  padding: 0 0 4px;
-  font-size: 0.68rem;
+  gap: 14px;
 }
 
 .project-copy h3 {
   margin: 0;
-  font-size: 1.3rem;
+  color: #dc9dff;
+  font-size: 1.6rem;
   line-height: 1.2;
 }
 
 .project-copy p {
   margin: 0;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
+  color: #e0d8e7;
+  line-height: 1.6;
 }
 
-.project-copy .repo-link {
-  margin-top: 2px;
-  font-size: 0.9rem;
+.project-type {
+  color: #c7aedf;
+  font-size: 0.85rem;
+}
+
+.project-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #b5c9ff;
   font-weight: 700;
+  transition: gap 0.2s ease;
+}
+
+.project-square:hover .project-action,
+.project-square:focus-visible .project-action {
+  gap: 14px;
 }
 
 .repo-link,
@@ -799,9 +817,6 @@ body {
   }
 
 
-  .repo-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
