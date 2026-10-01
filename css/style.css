@@ -254,6 +254,8 @@ svg {
 
 .repo-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 840px;
+  margin-inline: auto;
 }
 
 .info-card h3,
@@ -383,6 +385,10 @@ svg {
   .section,
   .page-intro {
     padding: 28px 0;
+  }
+
+  .repo-grid {
+    grid-template-columns: 1fr;
   }
 }
 
