@@ -5,6 +5,7 @@
   font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
+/* Shared site colors and effects */
 :root {
   --text-dark: #202923;
   --text-muted: #58645c;
@@ -241,6 +242,7 @@ svg {
   backdrop-filter: blur(12px);
 }
 
+/* Square, clickable project tiles */
 .project-square {
   display: flex;
   flex-direction: column;
@@ -513,6 +515,7 @@ body {
   transform: translateY(-1px);
 }
 
+/* Project-specific visuals inside each tile */
 .project-art {
   position: relative;
   display: grid;
@@ -659,6 +662,7 @@ body {
   background: #d8cce7;
 }
 
+/* GPA app dashboard preview */
 .grade-dashboard {
   width: min(72%, 290px);
   padding: 18px;
