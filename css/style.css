@@ -6,14 +6,14 @@
 }
 
 :root {
-  --text-dark: #1f2430;
-  --text-muted: #5f6470;
-  --accent: #c95c6b;
-  --accent-deep: #a64254;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: rgba(255, 255, 255, 0.86);
-  --border: rgba(31, 36, 48, 0.08);
-  --shadow: 0 18px 50px rgba(31, 36, 48, 0.10);
+  --text-dark: #202923;
+  --text-muted: #58645c;
+  --accent: #b44e3b;
+  --accent-deep: #873a2d;
+  --surface: #fffefa;
+  --surface-strong: #fffefa;
+  --border: #d7ddd4;
+  --shadow: 0 12px 28px rgba(32, 41, 35, 0.07);
 }
 
 html {
@@ -377,6 +377,137 @@ svg {
   .section,
   .page-intro {
     padding: 28px 0;
+  }
+}
+
+* {
+  font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f3f4ed;
+  background-image: linear-gradient(rgba(32, 41, 35, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(32, 41, 35, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.site-header {
+  background: #f3f4ed;
+  backdrop-filter: none;
+  border-bottom-color: var(--border);
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.site-footer a {
+  color: var(--accent-deep);
+}
+
+.hero-section {
+  min-height: min(78vh, 760px);
+}
+
+.hero-copy {
+  background: transparent;
+  border: 0;
+  border-left: 3px solid var(--accent);
+  border-radius: 0;
+  padding: 20px 0 20px 36px;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.eyebrow {
+  color: var(--accent-deep);
+}
+
+.hero-copy h1,
+.section-title,
+.page-intro h1,
+.feature-card h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0;
+}
+
+.hero-copy h1 {
+  font-size: 4rem;
+}
+
+.cta-button,
+.secondary-button,
+.card-link {
+  border-radius: 4px;
+}
+
+.cta-button {
+  background: var(--accent);
+  box-shadow: none;
+}
+
+.secondary-button {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.cta-button:hover,
+.secondary-button:hover,
+.card-link:hover {
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+.feature-card {
+  background: #e4eadf;
+  border: 1px solid #cbd5c8;
+  border-radius: 8px;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.card-tag,
+.repo-badge {
+  padding: 0 0 6px;
+  border-bottom: 1px solid var(--accent);
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent-deep);
+}
+
+.section-title,
+.page-intro h1 {
+  font-size: 2.7rem;
+}
+
+.info-card,
+.repo-card,
+.profile-copy,
+.profile-list {
+  border-radius: 8px;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.project-square {
+  min-height: 260px;
+  aspect-ratio: auto;
+}
+
+.repo-link,
+.card-link {
+  color: var(--accent-deep);
+}
+
+@media (max-width: 620px) {
+  .hero-copy {
+    padding: 20px 0 20px 22px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.7rem;
+  }
+
+  .section-title,
+  .page-intro h1 {
+    font-size: 2.2rem;
   }
 }
 
